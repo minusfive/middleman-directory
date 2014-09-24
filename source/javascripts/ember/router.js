@@ -1,6 +1,6 @@
 MD.Router.map(function() {
-  this.route('category', { path: '/:category_name' }, function() {
-    this.route('tag', { path: '/:tag_name' });
+  this.route('category', {path: ':category_id'}, function() {
+    this.route('tag', {path: ':tag'});
   });
 });
 

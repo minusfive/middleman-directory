@@ -10,25 +10,18 @@ module MiddlemanDirectory
       process_categories
     end
 
-    helpers do
-      def directory_categories
-        directory_data[:categories]
-      end
-
-      def directory_items
-        directory_data[:items]
-      end
+    def manipulate_resource_list(resources)
+      # Index proxies, all data
+      app.proxy "/api/1/directory_items.json", "/api/result.json",
+        locals: {t: { categories:       app.directory_data[:categories],
+                      directory_items:  app.directory_data[:items]}}
+      app.proxy "/api/1/categories.json", "/api/result.json",
+        locals: {t: { categories:       app.directory_data[:categories],
+                      directory_items:  app.directory_data[:items]}}
+      resources
     end
 
     private
-
-    def categories
-      app.directory_data[:categories]
-    end
-
-    def items
-      app.directory_data[:items]
-    end
 
     def process_categories
       app.directory_data[:categories] = app.data.to_h.keys.map do |cat_name|
@@ -55,22 +48,31 @@ module MiddlemanDirectory
     end
 
     def process_category_items(cat)
-      app.directory_data[:items] << app.data[cat[:name]].map do |i|
+      items = app.data[cat[:name]].map do |i|
         i[:id]                    =   i[:name].parameterize
         i[:category_id]           =   cat[:id]
+        i[:tags]                  =   (i[:tags] || []).map(&:downcase)
         cat[:tags]                <<  i[:tags]
         cat[:directory_item_ids]  <<  i[:id]
         i
       end
+      app.directory_data[:items].concat(items).uniq!
       cat
     end
 
     def setup_category_proxies(cat)
-      app.proxy "/#{cat[:name]}", "/index.html"
-      app.proxy "/#{cat[:name]}/all", "/index.html"
+      app.proxy "/#{cat[:id]}", "/index.html"
+      app.proxy "/#{cat[:id]}/all", "/index.html"
+      app.proxy "/api/1/categories/#{cat[:id]}.json", "/api/result.json",
+        locals: {t: {category: cat}}
 
       cat[:tags].each do |tag|
-        app.proxy "/#{cat[:name]}/#{tag}", "/index.html"
+        app.proxy "/#{cat[:id]}/#{tag}", "/index.html"
+      end
+
+      def setup_item_proxies(i)
+        app.proxy "/api/1/directory_items/#{i[:id]}.json", "/api/result.json",
+          locals: {t: {directory_item: i}}
       end
     end
   end

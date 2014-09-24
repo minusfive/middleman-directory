@@ -1,0 +1,38 @@
+<div class="listjs-list">
+  {{#each sortedItems}}
+    <div class="row">
+       <div class="list-details columns large-8">
+         <h2 class="name">
+          <a {{bindAttr href=normalizedLink}} target="_blank">{{name}}</a>
+
+          {{#if isOfficial}}
+            <span class="label label-official category">Official</span>
+          {{else}}
+            <span class="label label-community category">Community</span>
+          {{/if}}
+
+          {{#each tag in tags}}
+            <span class="label subcategory">{{tag.name}}</span>
+          {{/each}}
+         </h2>
+         <p class="description">{{{description}}}</p>
+         <p class="list-details-footer">
+          {{#if links.github}}
+             <i class="icon-link"></i><a {{bindAttr href=links.github}} target="_blank">{{links.github}}</a>
+          {{/if}}
+          {{#if links.site}}
+             <i class="icon-link"></i><a {{bindAttr href=links.site}} target="_blank">{{links.site}}</a>
+          {{/if}}
+         </p>
+       </div>
+       {{#if links.github}}
+       <div class="columns large-3 large-offset-1">
+         <div class="well">
+             <a class="button expand btn-github" {{bindAttr href=links.github}} target="_blank"><i class="icon-github icon-large" style="line-height: 1.2em;"></i> Github</a>
+           <!--a class="button expand btn-middleman"><i class="icon-cog icon-large" style="line-height: 1.2em;"></i> <s>Config</s></a-->
+         </div>
+       </div>
+       {{/if}}
+    </div>
+  {{/each}}
+</div>

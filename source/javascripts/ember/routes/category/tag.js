@@ -1,9 +1,10 @@
-MD.CategoryTagRoute = Ember.Route.extend({
+MD.CategoryTagRoute = Em.Route.extend({
   model: function(params) {
-    return MD.Tag.tagForName(params.tag_name);
-  },
-
-  serialize: function(params) {
-    return { tag_name: params.get('name').toLowerCase() };
+    return {filterTag: params.tag};
   }
+
+  // setupController: function(controller, model) {
+  //   this._super(controller, model);
+  //   // controller.set('filterText', null);
+  // }
 });

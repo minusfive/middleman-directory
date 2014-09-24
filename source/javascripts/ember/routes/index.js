@@ -1,5 +1,5 @@
-MD.IndexRoute = Ember.Route.extend({
-  redirect: function() {
-    this.transitionTo('category', ObjectifiedCategories.findProperty('name', 'Extensions'));
+MD.IndexRoute = Em.Route.extend({
+  afterModel: function() {
+    this.transitionTo('category', this.store.find('category', 'extensions'));
   }
 });

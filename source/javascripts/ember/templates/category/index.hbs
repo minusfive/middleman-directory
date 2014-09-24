@@ -1,0 +1,40 @@
+{{partial 'partials/category-header'}}
+
+<div class="listjs-list">
+  {{#each item in filteredItems}}
+    <div class="row">
+       <div class="list-details columns large-8">
+         <h2 class="name">
+          <a {{bind-attr href=item.normalizedLink}} target="_blank">{{item.name}}</a>
+
+          {{#if item.isOfficial}}
+            <span class="label label-official category">Official</span>
+          {{else}}
+            <span class="label label-community category">Community</span>
+          {{/if}}
+
+          {{#each tag in item.tags}}
+            <span class="label subcategory">{{tag}}</span>
+          {{/each}}
+         </h2>
+         <p class="description">{{{item.description}}}</p>
+         <p class="list-details-footer">
+          {{#if item.links.github}}
+             <i class="icon-link"></i><a {{bind-attr href=item.links.github}} target="_blank">{{item.links.github}}</a>
+          {{/if}}
+          {{#if item.links.site}}
+             <i class="icon-link"></i><a {{bind-attr href=item.links.site}} target="_blank">{{item.links.site}}</a>
+          {{/if}}
+         </p>
+       </div>
+       {{#if item.links.github}}
+       <div class="columns large-3 large-offset-1">
+         <div class="well">
+             <a class="button expand btn-github" {{bind-attr href=item.links.github}} target="_blank"><i class="icon-github icon-large" style="line-height: 1.2em;"></i> Github</a>
+           <!--a class="button expand btn-middleman"><i class="icon-cog icon-large" style="line-height: 1.2em;"></i> <s>Config</s></a-->
+         </div>
+       </div>
+       {{/if}}
+    </div>
+  {{/each}}
+</div>

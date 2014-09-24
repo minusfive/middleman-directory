@@ -1,0 +1,11 @@
+<div class="github-fork-ribbon-wrapper right">
+  <div class="github-fork-ribbon">
+    <a href="https://github.com/middleman/middleman-directory" target="_blank">Add Your Extension <i class="icon-github-alt"></i></a>
+  </div>
+</div>
+
+<dl class="sub-nav">
+  {{#each tag in sortedTags}}
+    {{#link-to 'category.tag' ../this tag tagName="dd"}}<a>{{tag}}</a>{{/link-to}}
+  {{/each}}
+</dl>

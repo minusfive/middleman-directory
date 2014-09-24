@@ -1,15 +1,33 @@
 MD.CategoryController = Ember.ObjectController.extend({
+  needs: ['categoryTag', 'application'],
+
+  filterTag:      Em.computed.readOnly('controllers.categoryTag.filterTag'),
+  filterText:     Em.computed.alias('controllers.application.filterText'),
+  filteredItems:  Em.computed.reads('directoryItems'),
+
   sortedTags: function() {
-    var sortedTags = Ember.copy(this.get('tags'));
+    var tags = this.get('tags').reject(function(tag){
+      return Em.isEqual(tag, 'official');
+    }).sort();
+    tags.unshift('official');
+    return tags;
+  }.property('tags.[]'),
 
-    sortedTags.sort(function(item1, item2) {
-      if (item1.get('name') === 'Official') { return -1; }
-      if (item2.get('name') === 'Official') { return 1; }
-      return item1.get('name').localeCompare(item2.get('name'));
-    });
+  searchItems: function() {
+    var items       = this.get('directoryItems'),
+        filterText  = this.getWithDefault('filterText', '')
 
-    sortedTags.unshiftObject(MD.Tag.tagForName('all'));
+    if (!Em.isEmpty(filterText)) {
+      items = items.filter(function(item) {
+        return (item.get('name').toLowerCase().indexOf(filterText) > -1) ||
+        (item.get('description').toLowerCase().indexOf(filterText) > -1);
+      });
+    }
 
-    return sortedTags;
-  }.property('tags.@each')
+    this.set('filteredItems', items);
+  },
+
+  filterTextOrItemsDidChange: function() {
+    Em.run.debounce(this, 'searchItems', 150);
+  }.observes('filterText')
 });

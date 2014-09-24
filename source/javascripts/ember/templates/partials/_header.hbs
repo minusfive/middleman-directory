@@ -1,0 +1,34 @@
+<div class="header row">
+  <div class="columns large-5">
+    <h1>
+      {{#link-to 'application' class="logo"}}
+        <img src="/images/mm-blue-w-text.svg" alt="Middleman Directory" width="200" height="200">
+      {{/link-to}}
+    </h1>
+    <dl class="sub-nav">
+      {{#each category in model}}
+        {{#link-to 'category' category tagName="dt"}}
+          <a>{{category.name}}</a>
+        {{/link-to}}
+      {{/each}}
+    </dl>
+  </div>
+  <div class="columns large-7">
+    <div class="extension-search">
+      {{view MD.FilterView valueBinding="filterText"}}
+    </div>
+    <div class="extension-suggestions">
+      <p>
+        <span class="tip-right">↪</span>
+        <a class="tag" {{action filter "S3"}}>S3</a>,
+        <a class="tag" {{action filter "CDN"}}>CDN</a>,
+        <a class="tag" {{action filter "Syntax"}}>Syntax</a>,
+        <a class="tag" {{action filter "Blog"}}>Blog</a>,
+        <a class="tag" {{action filter "Favicon"}}>Favicon</a>,
+        <a class="tag" {{action filter "SVG"}}>SVG</a>,
+        <a class="tag" {{action filter "Compress"}}>Compress</a>,
+        <a class="tag" {{action filter "Ember"}}>Ember</a>
+      </p>
+    </div>
+  </div>
+</div>

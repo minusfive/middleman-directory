@@ -3,9 +3,4 @@
 //= require ember
 //= require ember-data
 //= require ember/app
-//= require ember/models
-//= require ember/router
-//= require_tree ./ember/routes
-//= require_tree ./ember/controllers
-//= require_tree ./ember/views
 //= require_self
