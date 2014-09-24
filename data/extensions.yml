@@ -24,7 +24,9 @@
   supported_api_versions:
     - original
   tags:
-    - Config, Settings, Environments
+    - Config
+    - Settings
+    - Environments
 -
   name: middleman-presentation
   description: Create presentations based on reveal.js and deliver them with middleman
