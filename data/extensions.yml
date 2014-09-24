@@ -105,9 +105,9 @@
     github: https://github.com/middleman/middleman-livereload
   supported_api_versions:
     - original
+  official: true
   tags:
     - Tooling
-    - Official
 -
   name: middleman-s3_redirect
   description: Configure S3 to redirect URLs to a new location.
@@ -151,9 +151,9 @@
     github: https://github.com/middleman/middleman-syntax
   supported_api_versions:
     - original
+  official: true
   tags:
     - Tooling
-    - Official
 -
   name: middleman-blog
   description: Middleman blogging extension
@@ -162,8 +162,7 @@
   supported_api_versions:
     - original
     - v4
-  tags:
-    - Official
+  official: true
 -
   name: middleman-target
   description: Create and build source for separate build targets.
@@ -439,9 +438,9 @@
     github: https://github.com/middleman/middleman-minify-html
   supported_api_versions:
     - original
+  official: true
   tags:
     - Tooling
-    - Official
     - Optimization
 -
   name: middleman-knockoutjs

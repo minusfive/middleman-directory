@@ -3,70 +3,93 @@
   description: Casper theme (Ghost) for Middleman-Blog.
   links:
     github: https://github.com/danielbayerlein/middleman-casper
-  tags: [Theme, Blog]
+  tags:
+    - Theme
+    - Blog
 -
   name: middleman-impress
-  description: A Middleman Project Template built with impress.js, Haml, Sass and CoffeeScript.
+  description: "A Middleman Project Template built with impress.js, Haml, Sass and CoffeeScript."
   links:
     github: https://github.com/danielbayerlein/middleman-impress
-  tags: [Presentation]
+  tags:
+    - Presentation
 -
   name: Slimmer
-  description: Starter Template ~ Slim, Sass, Coffeescript precompilers ~ Bower, Compass & Github Pages tools ~ Sublime Text project file
+  description: "Starter Template ~ Slim, Sass, Coffeescript precompilers ~ Bower, Compass & Github Pages tools ~ Sublime Text project file"
   links:
     github: https://github.com/polymatt/slimmer
-  tags: ['slim', 'compass', 'coffeescript', 'bower', 'github pages', 'sublime text']
+  tags:
+    - slim
+    - compass
+    - coffeescript
+    - bower
+    - github pages
+    - sublime text
 -
   name: Amicus
-  description: HTML5 Boilerplate 4.0, Sass, Compass & Susy with a responsive layout and up-to-date components.
+  description: "HTML5 Boilerplate 4.0, Sass, Compass & Susy with a responsive layout and up-to-date components."
   links:
     github: https://github.com/nathos/amicus
-  tags: []
 -
   name: CHUBBS!
   description: Middleman Compass Haml (Uhu!) Boilerplate Bootstrap Sass Template from <a href="http://svallory.github.com/">The Blacksmith</a>.
   links:
     github: https://github.com/theblacksmith/chubbs
-  tags: []
 -
   name: Middleman-Zurb-Foundation
   description: Middleman Skeleton For Zurb Foundation 5 (Sass version).
   links:
     github: https://github.com/axyz/middleman-zurb-foundation
-  tags: ['ZURB Foundation', 'Sass', 'bower']
+  tags:
+    - ZURB Foundation
+    - Sass
+    - bower
 -
   name: middleman-by-lifepillar
-  description: Template using Foundation ≥5 and Font Awesome ≥4, with support for Disqus, Google Analytics, MathJax, and more!
+  description: "Template using Foundation ≥5 and Font Awesome ≥4, with support for Disqus, Google Analytics, MathJax, and more!"
   links:
     github: https://github.com/lifepillar/middleman-by-lifepillar
-  tags: ['ZURB Foundation', 'Font Awesome', 'Sass', 'Disqus', 'Analytics', 'MathJax', 'Blog']
+  tags:
+    - ZURB Foundation
+    - Font Awesome
+    - Sass
+    - Disqus
+    - Analytics
+    - MathJax
+    - Blog
 -
   name: Middleman-Foundation
   description: ZURB Foundation in SCSS.
   links:
     github: https://github.com/vocino/middleman-foundation
-  tags: [ZURB Foundation]
+  tags:
+    - ZURB Foundation
 -
   name: Middleman-Foundation5-Basic
-  description: Foundation 5, SCSS, HAML and Coffee Script. Modular structure for css/scss files. Rails like assets structure.
+  description: "Foundation 5, SCSS, HAML and Coffee Script. Modular structure for css/scss files. Rails like assets structure."
   links:
   github: hhttps://github.com/RalphAtHamburg/middleman-foundation5-basic
-  tags: ['ZURB Foundation', 'Foundation 5', 'Sass', 'HAML', 'CoffeeScript']
+  tags:
+    - ZURB Foundation
+    - Foundation 5
+    - Sass
+    - HAML
+    - CoffeeScript
 -
   name: Middleman-Foundation-SMACSS
-  description: ZURB Foundation in Compass, SCSS & HAML & following the SMACSS style guide.
+  description: "ZURB Foundation in Compass, SCSS & HAML & following the SMACSS style guide."
   links:
     github: https://github.com/hhg2288/foundation-smacss-middleman
-  tags: ['ZURB Foundation']
+  tags:
+    - ZURB Foundation
 -
   name: Middleman-Frameless
   description: Basic project template with adaptive Sass grid from <a href="http://framelessgrid.com/">Frameless</a>.
   links:
     github: https://github.com/BryanSchuetz/middleman-frameless
-  tags: []
 -
   name: middleman-phonegap
-  description: Phonegap integration template with Haml, Sass, Coffeescript. Automatically compiles and emulates Phonegap application after build.
+  description: "Phonegap integration template with Haml, Sass, Coffeescript. Automatically compiles and emulates Phonegap application after build."
   links:
     github: https://github.com/pixelsonly/middleman-phonegap
   tags:
@@ -76,25 +99,23 @@
   description: Middleman blog template containing ZURB Foundation and sensible default components and templates.
   links:
     github: https://github.com/mattolson/middleman-zurb-template
-  tags: ['ZURB Foundation']
+  tags:
+    - ZURB Foundation
 -
   name: Sauce
-  description: Middleman template with Haml, Compass, CoffeeScript, and DRY file structure.
+  description: "Middleman template with Haml, Compass, CoffeeScript, and DRY file structure."
   links:
     github: https://github.com/nikiliu/sauce
-  tags: []
 -
   name: Single Page with Bourbon
   description: Good for a <a href="http://timbreapp.com">single page</a> site. Also integrates <a href="http://bourbon.io">Bourbon</a>
   links:
     github: https://github.com/edwardloveall/middleman-template-single-page-with-bourbon
-  tags: []
 -
   name: Middleman-Heroku
   description: Basic project template for Heroku.
   links:
     github: https://github.com/indirect/middleman-heroku-static-app
-  tags: []
 -
   name: Middleman-Ratchet
   description: Middleman plugin that adds support for the <a href="http://maker.github.com/ratchet/">Ratchet</a> prototyping mobile.
@@ -107,40 +128,34 @@
   description: Basic Middleman-Blog project template with adaptive Sass grid from <a href="http://framelessgrid.com/">Frameless</a>.
   links:
     github: https://github.com/BryanSchuetz/middleman-blog-frameless
-  tags: []
 -
-  name: Middleman setup with Haml, Sass and Coffeescript
+  name: "Middleman setup with Haml, Sass and Coffeescript"
   description:
   links:
     github: https://github.com/pixelsonly/middleman-hamlsasscoffee
-  tags: []
 -
   name: middleman-impress
-  description: Middleman setup with Haml, Sass and impress.js* for HTML presentation
+  description: "Middleman setup with Haml, Sass and impress.js* for HTML presentation"
   links:
     github: https://github.com/blackbiron/middleman-impress
-  tags: []
 -
   name: ResumeMan
   description: A pre-configured Middleman setup for publishing resumes with built-in PDF export
   links:
     github: https://github.com/reefab/ResumeMan
-  tags: []
 -
   name: Middleman-Combined
-  description: A bare-bones template that includes mobile-first, inline media queries with IE support. Great for prototypes.
+  description: "A bare-bones template that includes mobile-first, inline media queries with IE support. Great for prototypes."
   links:
     github: https://github.com/nathanlong/middleman-combined
-  tags: []
 -
   name: Middleman-Prototype
-  description: Create first prototype with less-hassle-possible. Bootstrap-scss, Scss, jquery, html5shiv, haml
+  description: "Create first prototype with less-hassle-possible. Bootstrap-scss, Scss, jquery, html5shiv, haml"
   links:
     github: https://github.com/skatkov/middleman-prototype
-  tags: []
 -
   name: Middleman-Neato
-  description: Slim, Sass, Bourbon & Neat with a boilerplate base and some <a href="https://github.com/shkm/middleman-neato/blob/master/README.md#features">nifty features</a>.
+  description: "Slim, Sass, Bourbon & Neat with a boilerplate base and some <a href='https://github.com/shkm/middleman-neato/blob/master/README.md#features'>nifty features</a>."
   links:
     github: https://github.com/shkm/middleman-neato
 -
@@ -150,36 +165,48 @@
     github: https://github.com/shkm/middleman-neato
 -
   name: middleman-bower
-  description: A middleman template that includes easy asset package managment with bower, among other cool features.
+  description: "A middleman template that includes easy asset package managment with bower, among other cool features."
   links:
     github: https://github.com/headcanon/middleman-bower-template
 -
   name: The Slender (middle) Man
-  description: A bare-bones template featuring simplicity and cleanness with Slim and Sass on the top of H5BP, also comes with Bower support.
+  description: "A bare-bones template featuring simplicity and cleanness with Slim and Sass on the top of H5BP, also comes with Bower support."
   links:
     github: https://github.com/PaBLoX-CL/slender-man
-  tags: ['slim', 'Sass', 'bower', 'coffeescript']
+  tags:
+    - slim
+    - Sass
+    - bower
+    - coffeescript
 -
   name: middleman_starter
-  description: For people who prefer ERB to Haml, and who like BEM, SMACSS, Sass, and Susy. Also comes with a style guide if you're into atomic design.
+  description: "For people who prefer ERB to Haml, and who like BEM, SMACSS, Sass, and Susy. Also comes with a style guide if you're into atomic design."
   links:
     github: https://github.com/tombryan/middleman_starter
-  tags: ['mobile first']
+  tags:
+    - mobile first
 -
   name: Middleman-Bootstrap-Bower
   description: Bootstrap + Middleman + Bower template.
   links:
     github: https://github.com/razorfly/middleman-bootstrap-template
-  tags: ['bootstrap', 'bower', 'markdown']
+  tags:
+    - bootstrap
+    - bower
+    - markdown
 -
   name: Personal Site Template
-  description: A personal website using Zurb Foundation. Features a portfolio, blog, easy configuration-based setup, and Sass-based theming.
+  description: "A personal website using Zurb Foundation. Features a portfolio, blog, easy configuration-based setup, and Sass-based theming."
   links:
     github: http://github.com/techpeace/personal-site-template
-  tags: ['ZURB Foundation', 'Sass', 'theming', 'github pages']
+  tags:
+    - ZURB Foundation
+    - Sass
+    - theming
+    - github pages
 -
   name: Fuark
-  description: CoffeeScript, Stylus, Autoprefixer, and reasonable project structure.
+  description: "CoffeeScript, Stylus, Autoprefixer, and reasonable project structure."
   links:
     github: https://github.com/vast/fuark
   tags:
@@ -187,22 +214,40 @@
     - stylus
 -
   name: Middleman-blog-bootstrap-template
-  description: Blog starter template ~ Bootswatch theme selector, Bootstrap-scss / FontAwesome / jQuery / Html5shiv with Bower, Slim / Sass / Coffeescript precompilers
+  description: "Blog starter template ~ Bootswatch theme selector, Bootstrap-scss / FontAwesome / jQuery / Html5shiv with Bower, Slim / Sass / Coffeescript precompilers"
   links:
     github: https://github.com/biblichor/middleman-blog-bootstrap-template
-  tags: ['bootstrap', 'bower', 'Font Awesome', 'slim', 'coffeescript', 'Sass']
+  tags:
+    - bootstrap
+    - bower
+    - Font Awesome
+    - slim
+    - coffeescript
+    - Sass
 -
   name: Thane
-  description: Thane — is a Middleman template, based on HTML5 Boilerplate. It also contains some Bootstrap styles. Thane is intended as a fast and easy way to initiate the process of web-development .
+  description: "Thane — is a Middleman template, based on HTML5 Boilerplate. It also contains some Bootstrap styles. Thane is intended as a fast and easy way to initiate the process of web-development."
   links:
     github: https://github.com/denisfl/thane/
-  tags: ['HTML5 Boilerplate', 'Bootstrap', 'Slim', 'SCSS']
+  tags:
+    - HTML5 Boilerplate
+    - Bootstrap
+    - Slim
+    - SCSS
 -
   name: Duo Color
-  description: Duo Color — universal template for Middleman. Blog-aware, bootstrap, internationalization, latex, privacy-aware defaults
+  description: "Duo Color — universal template for Middleman. Blog-aware, bootstrap, internationalization, latex, privacy-aware defaults"
   links:
     github: https://github.com/rriemann/middleman-blog-template-duocolor
-  tags: ['bower', 'bootstrap', 'slim', 'markdown', 'SCSS', 'mobile', 'compass', 'blog']
+  tags:
+    - bower
+    - bootstrap
+    - slim
+    - markdown
+    - SCSS
+    - mobile
+    - compass
+    - blog
 -
   name: middleman-bower-bourbon-neat
   description: "Starter template with: Bower, Sass, Bourbon, Neat, Coffeescript, jQuery"
@@ -219,7 +264,6 @@
   description: Template for enchant.js
   links:
     github: https://github.com/ntotani/middleman-enchant.js
-  tags: []
 -
   name: ConfMan
   description: Conference Site Template
@@ -235,7 +279,8 @@
   description: Build online books with Middleman. Comes with a selection of pre-built themes.
   links:
     github: https://github.com/bryanbraun/franklin
-  tags: ['ebook']
+  tags:
+    - ebook
 -
   name: middleman-static-d3
   description: Create d3.js visualizations in a single stand-alone HTML file.
@@ -246,7 +291,7 @@
     - Visualization
 -
   name: Middleman Startaê
-  description: A starter template ready to run on Heroku. Comes with several helpers, partials and a nice basic structure to the HTML5, Sass and CoffeeScript. Resuming, a template using all the modern tools.
+  description: "A starter template ready to run on Heroku. Comes with several helpers, partials and a nice basic structure to the HTML5, Sass and CoffeeScript. Resuming, a template using all the modern tools."
   links:
     github: https://github.com/startae/middleman-startae
   tags:
