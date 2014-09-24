@@ -1,0 +1,12 @@
+{
+  "name":    "middleman-directory",
+  "private": true,
+  "homepage": "http://directory.middlemanapp.com/",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:middleman/middleman-directory.git"
+  },
+  "dependencies": {
+    "jquery":        "~2.1.1"
+  }
+}

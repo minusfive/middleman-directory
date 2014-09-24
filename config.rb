@@ -10,7 +10,8 @@ data.templates.each do |t|
   proxy "/api/#{slugify(t.name)}.json", "/api/result.json", locals: { t: t }
 end
 
-activate :ember
+activate :bower
+activate :emberman
 
 configure :build do
   set :ember_variant, :production

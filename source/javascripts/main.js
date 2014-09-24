@@ -1,6 +1,7 @@
-//= require "_libs/jquery-ajax-css-deprecated-dimensions-effects-event-alias-offset-sizzle-wrap"
-//= require "handlebars"
-//= require "ember"
+//= require jquery/dist/jquery.min
+//= require handlebars
+//= require ember
+//= require ember-data
 
 var App = Ember.Application.create({
 
